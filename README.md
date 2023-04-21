@@ -2,6 +2,14 @@
 
 A basic site serving static HTML pages built with a Node.js backend.
 
+## Setup
+
+```shell
+git clone git@github.com:Luzefiru/odin-basic-node-site.git
+cd ./odin-basic-node-site
+npm run start
+```
+
 ## Serving Static CSS Files Without a Framework
 
 An HTML file served by the server after a client initially gets it, can send another `'GET'` request to the server for any `href=` or `src=` files needed.
