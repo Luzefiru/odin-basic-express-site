@@ -11,6 +11,31 @@ html {
   height: 100%;
 }
 
+body {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: 16px;
+  background-color: rgb(51, 53, 51);
+}
+
 h1 {
-  color: red;
+  font-size: 5rem;
+  color: white;
+}
+
+ul {
+  list-style-type: lower-roman;
+}
+
+li {
+  font-size: 2rem;
+}
+
+a:link {
+  color: rgb(143, 227, 255);
+}
+
+a:visited {
+  color: rgb(255, 143, 255);
 }

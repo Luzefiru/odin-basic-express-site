@@ -17,6 +17,7 @@ const server = createServer((req, res) => {
       res.write(body);
       res.end();
     } else {
+      console.log(req.url);
       // defaults to 404.html if first is undefined (route does not exist)
       body = returnHTML(routes[req.url] || '404.html');
       res.writeHead(200, { 'Content-Type': 'text/html' });
