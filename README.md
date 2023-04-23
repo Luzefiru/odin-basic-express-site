@@ -10,7 +10,9 @@ cd ./odin-basic-node-site
 npm run start
 ```
 
-# Serving Static CSS Files Without a Framework
+# Serving Static CSS Files Without Express.js
+
+> You can see the code in the `node-version` branch.
 
 An HTML file served by the server after a client initially gets it, can send another `'GET'` request to the server for any `href=` or `src=` files needed.
 
