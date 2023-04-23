@@ -1,8 +1,9 @@
 /* server instance setup */
 const express = require('express');
 const app = express();
-/* setup public static file directory */
-app.use('*.css', express.static('public'));
+/* always serve public directory */
+app.use(express.static('public'));
+
 /* routers */
 const pagesRouter = require('./routes/pages.js');
 app.use(pagesRouter);
