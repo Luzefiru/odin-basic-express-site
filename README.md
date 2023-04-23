@@ -19,7 +19,7 @@ An HTML file served by the server after a client initially gets it, can send ano
 For example, here is `index.html` which is served when the client navigates to `host:port/`:
 
 ```html
-<!-- index.html -->
+<!-- /views/index.html -->
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -32,11 +32,11 @@ For example, here is `index.html` which is served when the client navigates to `
 This HTML file then issues another `'GET'` request to resolve the `href="style.css"`. I can let Express.js serve these files via an `express.static(path)` directory. When the client (the `.html` file in this case) requests for `./style.css`, it will send a `GET host:port/style.css` HTTP request which Express.js can serve thanks to `express.static('public')`.
 
 ```js
-/* src/app.js */
+/* /app.js */
 app.use(express.static('public'));
 ```
 
-I can think of this as _"always listen to any GET requests for files inside the 'public' directory"_.
+I can think of this as _"always listen to any `GET` requests for files inside the 'public' directory"_.
 
 # Reference
 
