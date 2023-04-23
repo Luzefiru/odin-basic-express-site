@@ -1,6 +1,6 @@
 # odin-basic-node-site
 
-A simple Node.js backend application to route static HTML pages & CSS stylesheets to the client.
+A simple Node.js backend application (without Express.js) to route static HTML pages & CSS stylesheets to the client.
 
 # Setup
 
